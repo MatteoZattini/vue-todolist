@@ -5,9 +5,9 @@ createApp({
     return {
       toDoList: [
         "fare la spesa",
-        "fare la spesa",
-        "fare la spesa",
-        "fare la spesa",
+        "fare la benzina",
+        "andare in palestra",
+        "fare il pranzo",
         "fare il bucato",
       ],
       button: document.getElementById("button-Add"),
@@ -22,17 +22,9 @@ createApp({
         this.toDoList.push(myInput.value)
         myInput.value = ""
     },
-    remove(array, indice) {
+    remove(indice) {
         console.log("click")
-        array[indice] = elemento
-        elemento.classList.add("d-none")
-        // if (indice == elemento) {
-        //     return indice.classList.add("d-none")
-        // }
-
-        // indice = this.toDoList(i)
-        // indice.classList.add("d-none")
-        
+        this.toDoList.splice(indice, 1)
     }
   },
 
