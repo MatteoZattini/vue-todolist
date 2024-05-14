@@ -19,6 +19,11 @@
                         <li v-for="things, i in toDoList">{{ things }}</li>
                     </ul>
                 </div>
+                
+                <div class="input-group">
+                    <input id="myInput" type="text" class="form-control" placeholder="cosa vuoi aggiungere?" aria-label="cosa vuoi aggiungere?" aria-describedby="button-Add">
+                    <button id="button-Add" @click="addElement()" class="btn btn-outline-secondary" type="button">Aggiungi</button>   
+                </div>
             </div>
         </div>
 
