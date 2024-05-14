@@ -8,7 +8,7 @@ createApp({
         "fare la spesa",
         "fare la spesa",
         "fare la spesa",
-        "fare la spesa",
+        "fare il bucato",
       ]
 
     }
@@ -16,7 +16,7 @@ createApp({
 
   methods: {
     printList(index) {
-        
+
     }
   }
 }).mount('#app')
